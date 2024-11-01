@@ -1,0 +1,7 @@
+service vendor.wvkprov_default /vendor/bin/hw/vendor.samsung.hardware.security.widevine.keyprov-service
+    interface aidl vendor.samsung.hardware.security.widevine.keyprov.ISehWidevineKeyProv/default
+    oneshot
+    disabled
+    class hal
+    user system
+    group system drm drmrpc

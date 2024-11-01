@@ -1,0 +1,6 @@
+libAImode_wrapper.camera.samsung.so
+libAIphoto_core.camera.samsung.so
+libLocalTM_wrapper.camera.samsung.so
+libOpenCL.so
+libPersonal_capture.camera.samsung.so
+libenn_user.samsung_slsi.so

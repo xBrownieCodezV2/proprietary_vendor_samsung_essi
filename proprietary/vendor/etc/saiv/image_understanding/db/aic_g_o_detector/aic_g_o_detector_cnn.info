@@ -1,0 +1,9 @@
+{
+	"version_id": "V2",
+	"tag" : "2.0",
+	"model_type" : "npu",
+	"precision" : "qasymm8",
+	"latency" : "1",
+	"compiler" : "enn_4.11.0_pamir",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.tflite"
+}

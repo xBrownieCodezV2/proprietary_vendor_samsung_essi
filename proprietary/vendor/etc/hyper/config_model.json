@@ -1,0 +1,49 @@
+{
+  "Hints": [
+    {
+      "Hint": "APP_LAUNCH",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "2995200"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_M",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_LM",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_SWITCH",
+      "ResoureList": [
+        {
+            "Resource" : "CPUMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    }
+  ]
+}

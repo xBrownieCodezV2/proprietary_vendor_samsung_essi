@@ -1,0 +1,7 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.media.mpp</name>
+        <version>3</version>
+        <fqname>ISehMppStore/default</fqname>
+    </hal>
+</manifest>

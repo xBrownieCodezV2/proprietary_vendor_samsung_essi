@@ -1,0 +1,10 @@
+# [ HDM SW Block
+on property:vendor.hdm.internal.bt=start
+    start vendor.bluetooth-1-0-qti
+
+on property:vendor.hdm.internal.bt=stop
+    stop vendor.bluetooth-1-0-qti
+
+on property:vendor.hdm.internal.bt=boot
+    stop vendor.bluetooth-1-0-qti
+# ] HDM SW Block

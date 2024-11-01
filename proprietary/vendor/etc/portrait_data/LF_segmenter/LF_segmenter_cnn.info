@@ -1,0 +1,10 @@
+{
+	"version_id": "v2",
+	"tag" : "2.0",
+	"model_type" : "npu",
+	"precision" : "qasymm8",
+	"compiler" : "enn2.0.17",
+	"latency" : "1",
+	"model_path" : "/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.tflite"
+}
+

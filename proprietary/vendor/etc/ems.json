@@ -1,0 +1,49 @@
+{
+	"requesters" : [
+		{
+			"name" : "change@/devices/platform/exynos-msn",
+			"requests" : [
+				{
+					"name" : "REQ_MODE_LEVEL",
+					"handle" : "deliver",
+					"paths" : [
+						"/sys/kernel/ems/emstune/req_mode_level"
+					]
+				},
+				{
+					"name" : "REQ_MODE",
+					"handle" : "deliver",
+					"paths" : [
+						"/sys/kernel/ems/emstune/req_mode"
+					]
+				},
+				{
+					"name" : "REQ_ECS_MASK",
+					"handle" : "deliver",
+					"paths" : [
+						"/sys/kernel/ems/ecs/req_cpus"
+					]
+				}
+			]
+		},
+		{
+			"name" : "change@/devices/platform/ems",
+			"requests" : [
+				{
+					"name" : "SYSBUSY",
+					"handle" : "sysbusy",
+					"paths" : [
+						"/sys/class/devfreq/17000010.devfreq_mif/interactive/current_mode"
+					]
+				},
+				{
+					"name" : "NOTI_MODE",
+					"handle" : "mode",
+					"paths" :[
+						"/sys/kernel/ems/emstune/req_mode"
+					]
+				}
+			]
+		}
+	]
+}

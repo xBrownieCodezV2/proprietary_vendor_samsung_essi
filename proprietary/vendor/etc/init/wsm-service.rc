@@ -1,0 +1,7 @@
+service sec_wsm_service /vendor/bin/hw/vendor.samsung.hardware.security.wsm-service
+    interface aidl vendor.samsung.hardware.security.wsm.service.ISehWsm/default
+    oneshot
+    disabled
+    class early_hal
+    user system
+    group system

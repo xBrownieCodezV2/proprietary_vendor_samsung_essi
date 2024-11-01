@@ -1,0 +1,151 @@
+{
+    "PERF_CONFIG_LIST": [
+        // Sample of boost-on-execute mode
+        {
+            "ID": 100001,                               // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 1,       // Target E2E latency (us)
+                "FREQ_MINLOCK_NPU": 0,                  // NPU frequency minlock (KHz)
+                "FREQ_MINLOCK_DNC": 0,                  // DNC frequency minlock (KHz)
+                "FREQ_MINLOCK_DSP": 0,                  // DSP frequency minlock (KHz)
+                "FREQ_MINLOCK_GPU": 1210000,            // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_BIG": 0,              // CPU big cluster frequency (KHz)
+                "FREQ_MINLOCK_CPU_MID": 1344000,        // CPU middle cluster frequency (KHz)
+                "FREQ_MINLOCK_CPU_LIT": 0,              // CPU little cluster frequency (KHz)
+                "FREQ_MINLOCK_MIF": 1352000,            // MIF frequency minlock (KHz)
+                "FREQ_MINLOCK_INT": 0,                  // INT frequency minlock (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 1,         // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+
+        // personalize s configuration & low power
+        {
+            "ID": 100002, // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 15000,      // Target E2E latency (us)
+                "FREQ_MINLOCK_GPU": 1210000,               // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_MID": 0,                 // CPU middle cluster frequency (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 0,            // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "off",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+
+        // personalize s configuration & front model
+        {
+            "ID": 100003, // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 8000,      // Target E2E latency (us)
+                "FREQ_MINLOCK_GPU": 1210000,              // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_MID": 0,                // CPU middle cluster frequency (KHz)
+                "FREQ_MINLOCK_MIF": 1716000,              // MIF frequency minlock (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 0,           // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+
+        // Video Call (Rainbow)
+        {
+            "ID": 100004,
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 10000,
+                "FREQ_MAXLOCK_NPU": 800000
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+
+        // Front Poratrait Preview (Rainbow)
+        {
+            "ID": 100005,
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 10000,
+                "FREQ_MAXLOCK_NPU": 800000
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+        
+        // AF Segmenter (Rainbow)
+        {
+            "ID": 100006, // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 15000,      // Target E2E latency (us)
+                "FREQ_MINLOCK_GPU": 1210000,               // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_MID": 0,                 // CPU middle cluster frequency (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 0,            // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "off",
+                "MODEL_EXECUTE": "off",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+        // SR#65 - rawSR_480x480_v17 (Rainbow)
+        {
+            "ID": 100007,                               // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 1,   // Target E2E latency (us)
+                "FREQ_MAXLOCK_NPU": 935000,
+                "SCHED_CPU_AFFINITY_THREAD_ENN_LIB": 112,
+                "FREQ_MINLOCK_GPU": 1210000,            // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_MID": 2515200,        // CPU middle cluster frequency (KHz)
+                "FREQ_MINLOCK_MIF": 3172000,            // MIF frequency minlock (KHz)
+                "FREQ_MINLOCK_INT": 533000,             // INT frequency minlock (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 1,         // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+                "MEM_LLC_SIZE_NPUDSP_SDMA": 4096,
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "on",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+        // SR#65-1 - m34198, M34931 (Rainbow)
+        {
+            "ID": 100008,                               // ID; available range 10001~9999999
+            "PERF_CONFIG": {
+                "SCHED_COMMON_TARGET_LATENCY": 1,  // Target E2E latency (us)
+                "FREQ_MAXLOCK_NPU": 935000,
+                "SCHED_CPU_AFFINITY_THREAD_ENN_LIB": 112,
+                "FREQ_MINLOCK_GPU": 1210000,            // GPU frequency minlock (KHz)
+                "FREQ_MINLOCK_CPU_MID": 2515200,        // CPU middle cluster frequency (KHz)
+                "FREQ_MINLOCK_MIF": 3172000,            // MIF frequency minlock (KHz)
+                "FREQ_MINLOCK_INT": 533000,             // INT frequency minlock (KHz)
+                "MEM_MO_SCEN_ID_CUSTOMIZED": 1,         // Customized MO scenario ID; 0(default), 1(heavy), 2(performance)
+                "MEM_LLC_SIZE_NPUDSP_SDMA": 4096,
+            },
+            "TIME_RANGE": {
+                "MODEL_OPEN": "on",
+                "MODEL_EXECUTE": "on",
+                "MODEL_CLOSE": "off",
+            },
+            "TIME_RANGE_COALESCING": "off",
+        },
+    ],
+}
